@@ -1,0 +1,15 @@
+{
+  "name": "measure-app",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower"
+  },
+  "dependencies": {
+    "ionic": ">=1.0.0-rc.5",
+    "angular-aria": ">=1.4.7",
+    "angular-gaugejs": "latest",
+    "angular-gettext": ">=2.1.2",
+    "highcharts": ">=4.1.9",
+    "highcharts-ng": ">=0.0.11",
+    "ngCordova": ">=0.1.23-alpha"
+  }
+}
