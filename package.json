@@ -1,0 +1,7 @@
+{
+  "name": "measure-app",
+  "scripts": {
+    "lint": "jshint www && jscs www",
+    "travis": "npm run lint"
+  }
+}
