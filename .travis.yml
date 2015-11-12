@@ -6,8 +6,6 @@ install:
   # Disable the spinner, it looks bad on Travis
   - npm config set spin false
 before_script:
-  - npm install -g jscs
-  - npm install -g jshint
-  - npm install -g bower
+  - npm install
   - bower install
 script: npm run travis
