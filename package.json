@@ -1,5 +1,11 @@
 {
   "name": "measure-app",
+  "homepage": "measurementlab.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-lab/measure-app.git"
+  },
+  "license": "Apache-2.0",
   "scripts": {
     "lint": "jshint www && jscs www",
     "test": "karma start test/karma.conf.js --single-run",
