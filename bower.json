@@ -1,7 +1,8 @@
 {
   "name": "measure-app",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower"
+    "ionic": "driftyco/ionic-bower",
+    "angular-mocks": "~1.4.7"
   },
   "dependencies": {
     "ionic": ">=1.0.0-rc.5",

@@ -1,0 +1,3 @@
+{
+  "predef": ["expect", "it", "beforeEach", "inject", "module", "describe"]
+}
