@@ -9,6 +9,11 @@ angular.module('MeasureApp', [], function($provide) {
   });
 })
 
+/*
+  Add chrome-extension addresses to angular's whitelist to avoid issues
+  encountered after the packaging of extensions.
+  Reference: http://stackoverflow.com/questions/15606751/angular-changes-urls-to-unsafe-in-extension-page
+*/
 .config(['$compileProvider', function($compileProvider) {
   if (window.chrome && chrome.app && chrome.app.runtime) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
@@ -20,7 +25,7 @@ angular.module('MeasureApp', [], function($provide) {
   is not available.
 */
 
-.service('$history', function($state, $rootScope, $window) {
+.service('$history', function($state) {
   var history = [];
 
   angular.extend(this, {
@@ -42,6 +47,10 @@ angular.module('MeasureApp', [], function($provide) {
     }
   });
 })
+
+/*
+  When a state is changed, push it to the history.
+*/
 
 .run(function($history, $state, $rootScope) {
   $rootScope.$on('$stateChangeSuccess', function(event, to, toParams, from,
